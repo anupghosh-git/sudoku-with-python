@@ -22,4 +22,11 @@ def display_playboard(pbo):
             else:
                  print(str(pbo[i][j]) + " ", end = "")
 
-display_playboard(play_board)
+#display_playboard(play_board)
+
+def empty_search(pbo):
+    for i in range(len(pbo)):
+        for j in range(len(pbo[0])):
+            if pbo[i][j] == 0:
+                print(i,j)#y,x
+#empty_search(play_board)
