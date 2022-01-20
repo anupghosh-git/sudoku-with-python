@@ -24,7 +24,7 @@ def display_playboard(pbo):
 
 #display_playboard(play_board)
 
-def empty_search(pbo):
+def empty_search(pbo): # function for find the empty square on the play board
     for i in range(len(pbo)):
         for j in range(len(pbo[0])):
             if pbo[i][j] == 0:
