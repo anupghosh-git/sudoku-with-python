@@ -10,6 +10,20 @@ play_board = [
     [1,8,9,7,0,0,0,1,3]
 ]
 
+def valid(pbo,num,loc):
+    for i in range(len(pbo[0])):
+        #Row checking
+        if pbo[loc[0]][i] == num and loc[1] != i :
+            return False
+        #Column Checking
+        if pbo[i][loc[1]] == num and loc[0] != i :
+            return False
+        #Box Checking
+
+
+
+
+
 def display_playboard(pbo):
     for i in range(len(pbo)):
         if i % 3 == 0 and i != 0:
@@ -29,4 +43,5 @@ def empty_search(pbo): # function for find the empty square on the play board
         for j in range(len(pbo[0])):
             if pbo[i][j] == 0:
                 print(i,j)#y,x
+    return None
 #empty_search(play_board)
